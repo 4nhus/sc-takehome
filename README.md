@@ -8,7 +8,7 @@ The technical take home for SC graduate program of 2025.
 
 - I annotated the original ```folders.go``` file with comments explaining what I think the code does.
 
-[//]: # (- I added ```folders_improvement_comments.go```, which contains the original code annotated with suggested improvements.)
+- I added ```folders_improvement_comments.go```, which contains the original code annotated with suggested improvements.
 
 [//]: # (- I added ```folders_improvement_implementation.go```, which contains the implemented improvements from above.)
 
