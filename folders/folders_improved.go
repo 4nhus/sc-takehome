@@ -1,11 +1,14 @@
 package folders
 
+// For mocking in unit tests
+var FetchAllFoldersFunc = FetchAllFolders
+
 // GetAllFoldersWithOrgID retrieves all folders for a given orgID.
 // It takes a FetchFolderRequest - which wraps an orgID - and returns a FetchFolderResponse - which wraps a slice of
 // folder pointers - and an error, if any.
 func GetAllFoldersWithOrgID(req *FetchFolderRequest) (*FetchFolderResponse, error) {
 	// FetchAllFolders may generate errors if it is replaced with an actual network / database implementation.
-	folders, err := FetchAllFolders()
+	folders, err := FetchAllFoldersFunc()
 	if err != nil {
 		return nil, err
 	}
