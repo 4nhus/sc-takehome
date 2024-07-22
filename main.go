@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-
 	"github.com/georgechieng-sc/interns-2022/folders"
 	"github.com/gofrs/uuid"
 )
@@ -12,7 +11,7 @@ func main() {
 		OrgID: uuid.FromStringOrNil(folders.DefaultOrgID),
 	}
 
-	res, err := folders.GetAllFolders(req)
+	res, err := folders.GetAllFoldersWithOrgID(req)
 	if err != nil {
 		fmt.Printf("%v", err)
 		return

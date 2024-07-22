@@ -1,5 +1,6 @@
 package folders
 
+/*
 import (
 	"github.com/gofrs/uuid"
 )
@@ -50,3 +51,4 @@ func FetchAllFoldersByOrgID(orgID uuid.UUID) ([]*Folder, error) {
 	}
 	return resFolder, nil
 }
+*/

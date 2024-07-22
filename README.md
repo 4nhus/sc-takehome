@@ -10,7 +10,7 @@ The technical take home for SC graduate program of 2025.
 
 - I added ```folders_improvement_comments.go```, which contains the original code annotated with suggested improvements.
 
-[//]: # (- I added ```folders_improvement_implementation.go```, which contains the implemented improvements from above.)
+- I added ```folders_improved.go```, which contains the implemented improvements from above.
 
 ### Component 2
 

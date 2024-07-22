@@ -1,21 +1,23 @@
 package folders
 
+/*
 import (
 	"github.com/gofrs/uuid"
 )
 
-// GetAllFoldersAnnotated This function performs the same task as FetchAllFoldersByOrgID, so one of them can be removed
+// GetAllFoldersAnnotated This function performs the same task as FetchAllFoldersByOrgID, which means the function name
+// is misleading. It can be renamed, and redundant logic in FetchAllFoldersByOrgID can be removed. There are also non-descriptive
+// variable names that can be improved.
 func GetAllFoldersAnnotated(req *FetchFolderRequest) (*FetchFolderResponse, error) {
 	// Since these are currently redundant, use them or remove them
 	var (
 		err error
 		f1  Folder
-		f1  Folder
 		fs  []*Folder
 	)
 	f := []Folder{}
 	// The error is discarded when it should be returned
-	r, _ := FetchAllFoldersByOrgID(req.OrgID)
+	r, _ := FetchAllFoldersByOrgIDAnnotated(req.OrgID)
 	// Dereferencing each folder pointer is redundant as the FetchFolderResponse value wraps a slice of folder pointers
 	for k, v := range r {
 		f = append(f, *v)
@@ -40,3 +42,4 @@ func FetchAllFoldersByOrgIDAnnotated(orgID uuid.UUID) ([]*Folder, error) {
 	}
 	return resFolder, nil
 }
+*/
