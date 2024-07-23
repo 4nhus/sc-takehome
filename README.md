@@ -14,7 +14,25 @@ The technical take home for SC graduate program of 2025.
 
 ### Component 2
 
+#### Token based pagination
+
+- My solution for a paginated version of GetAllFolders implements pagination using a token.
+- The token is a base64-encoded string representing the starting index of the next page.
+- It throws an error if the provided token cannot be decoded or if it represents an out-of-bounds start index.
+- For the same page size and token, it returns the same page (as no folders can be added to the sample data).
+- Details on how it works can be gleaned from the comments and code since it is a simple implementation.
+
+#### Why token based pagination
+
+An alternative, simpler solution would be offset based pagination, where the FetchFolderRequest takes a starting index
+for the page directly instead of a token. However, if the implementation for fetching folders used an actual database, 
+then pagination by offset would be slow for a large offset value as it would unnecessarily process all the folders 
+before the offset. A token for pagination could be calculated using some folder property, e.g. creation time, to filter 
+through the data efficiently. 
+
+
 ## Getting started
+
 
 Requires `Go` >= `1.20`
 
